@@ -53,6 +53,11 @@ folium.GeoJson(
 
 # 지도 출력
 st_folium(kor_map, width=700, height=500)
+st.write('''
+- 합계출산율이 높은 지역일수록 더 짙은 색으로 표시되는 지도
+- 마우스 오버 시 해당 지역의 이름이 나타나도록 툴팁을 추가했다
+- 지도상 가장 짙은 색으로 보이는 지역은 영광군, 강진군이다.
+''')
 
 # 전체 지역 개수
 total = birth_df.shape[0]
