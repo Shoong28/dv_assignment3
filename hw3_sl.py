@@ -59,6 +59,8 @@ st.write('''
 - 지도상 가장 짙은 색으로 보이는 지역은 영광군, 강진군이다.
 ''')
 
+st.write('---')
+
 # 전체 지역 개수
 total = birth_df.shape[0]
 st.write(f'전체 지역 개수: {total}개')
