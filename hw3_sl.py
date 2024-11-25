@@ -73,6 +73,8 @@ st.write(f'합계 출산율이 1.0 이하인 지역 개수: {under_1}개')
 under_1_ratio = under_1 / total * 100
 st.write(f'합계 출산율이 1.0 이하인 지역의 비율: {under_1_ratio:.2f}%')
 
+st.write('---')
+
 ##### 합계출산율 히스토그램 ########################################
 st.write("## 합계출산율 히스토그램")
 fig = px.histogram(
