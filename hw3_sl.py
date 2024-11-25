@@ -11,13 +11,13 @@ st.title("전국 행정구역별 합계출산율 지도")
 #### 지도 시각화 ########################################
 
 # 데이터 로드
-birth_df = pd.read_csv('../합계출산율_행정구역별.csv', header=1, encoding='euc-kr')
+birth_df = pd.read_csv('합계출산율_행정구역별.csv', header=1, encoding='euc-kr')
 birth_df.columns = ['행정구역', '합계출산율']
 
 # '통합창원시'를 '창원시'로 변경
 birth_df.loc[birth_df['행정구역'] == '통합창원시', '행정구역'] = '창원시'
 
-gdf_korea = gpd.read_file('../gdf_korea_2024.json')
+gdf_korea = gpd.read_file('gdf_korea_2024.json')
 
 
 # 기본 지도 생성
